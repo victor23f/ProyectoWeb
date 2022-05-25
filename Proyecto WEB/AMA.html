@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>InformatiK</title>
+    <link rel="shortcut icon" href="img/ICONO.jpg">
+    <meta charset="utf-8">
+    <meta name="author" content="Victor Fernandez">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  </head>
+  <body>
+
+    <div class="grid-container">
+      <header>
+        <img src="img/INFORMATIK.png">
+        <a>INFORMATIK®</a>
+      </header>
+      <nav class="nav">
+         <ul class="menu">
+              <li><a href="index.html" >Inicio</a></li>
+             <li><a href="productos.html" >Informática</a>
+             <ul class="submenu">
+            <li><a href="productos.html">Periféricos</a></li>
+            <li><a href="productos.html">Tarjetas gráficas</a></li>
+          </ul>
+             </li>
+             <li><a href="AMA.html" >Contacto</a></li>
+        </ul></nav>
+
+      <aside class="form-registro"> <h4>Formulario Registro</h4>
+        <div class="error" id="error"></div>
+           <input class="form" type="text" name="nombres" id="nombre" placeholder="Ingrese su Nombre">
+            <input class="form" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+           <input class="form" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+           <input class="form" type="password" name="correo" id="contraseña" placeholder="Ingrese su Contraseña">
+           <label><input class="" type="checkbox" name="terminos" id="validarTerminos">Acepte los terminos y condiciones</label>
+           <input class="botones" type="submit" onclick = "return enviarFormulario();" value="Registrar">
+           <p><a href="#">¿Ya tengo cuenta?</a></p>
+           
+      </aside>
+      <script src="app.js"></script>
+      <main class="introduccion">
+        <h1>Sede principal de InformatiK</h1> 
+        <br>
+        <br>
+        <img src="img/edificioInfo.jpg"> 
+
+    <p class="localizar"><a href="https://goo.gl/maps/8uycYPenCmj4GXqy7" style="color: white;">Pincha aqui para obtener la direccion a la tienda mas cercana.</a></p>
+        
+        
+      </main>
+      <footer> 
+        <div class="container">
+            <ul class="social-icons">
+                <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.google.com"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

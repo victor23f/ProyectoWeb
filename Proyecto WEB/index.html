@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>InformatiK</title>
+    <link rel="shortcut icon" href="img/ICONO.jpg">
+    <meta charset="utf-8">
+    <meta name="author" content="Victor Fernandez">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <img src="img/INFORMATIK.png">
+        <a class="header">INFORMATIK®</a>
+      </header>
+      <nav class="nav">
+         <ul class="menu">
+              <li><a href="index.html" >Inicio</a></li>
+             <li><a href="productos.html" >Informática</a>
+            <ul class="submenu">
+            <li><a href="productos.html">Periféricos</a></li>
+            <li><a href="productos.html">Tarjetas gráficas</a></li>
+            </ul>
+             </li>
+             <li><a href="AMA.html" >Contacto</a></li>
+         </ul>
+      </nav>
+
+      <aside class="form-registro"> <h4>Formulario Registro</h4>
+        <div class="error" id="error"></div>
+           <input class="form" type="text" name="nombres" id="nombre"  placeholder="Ingrese su Nombre">
+            <input class="form" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+            <input class="form" type="date" name="fecha" min="1930-01-01" max="2004-01-01" id="fecha" placeholder="Ingrese su fecha de nacimiento">
+           <input class="form" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+           <input class="form" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
+           <label >Escoge tu comunidad:</label>
+         <select class="form" id="comunidad" name="comunidad" form="comunidad">
+           <option value="Extremadura">Extremadura</option>
+           <option value="Andalucia">Andalucia</option>
+          </select>
+          <label>Selecciona al menos una afición</label><br>
+          <label><input type="checkbox" name="terminos" id="aficiones">Viajar</label><br>
+          <label><input type="checkbox" name="terminos" id="aficiones1">Leer</label><br>
+          <label><input type="checkbox" name="terminos" id="aficiones2">Deporte</label><br><br>
+          <label><input type="checkbox" name="terminos" id="validarTerminos">Acepte los terminos y condiciones</label>
+           <input class="botones"type="submit" onclick = "return enviarFormulario();" value="Registrar">
+           <p><a href="#">¿Ya tengo cuenta?</a></p>
+           <div class="error" id="error2"></div>
+      </aside>
+      
+      <script src="app.js"></script>
+
+      <main class="introduccion">
+        <h1>¿Quienes somos?</h1> 
+        <br>
+        <br>
+        <a>Bienvenido a Informatik, una tienda online donde podrás encontrar los productos tecnológicos que estas buscando a buen precio. </a> 
+        <br>
+        <br>
+        <img src=>
+      </main>
+      <footer>
+        <div class="container">
+          <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+</html>

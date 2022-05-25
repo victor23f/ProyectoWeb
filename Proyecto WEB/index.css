@@ -1,0 +1,287 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.header img {
+	height: 110px;
+	width:435px;
+}
+.introduccion{
+    text-align: center;
+    line-height: 20pt;
+	margin-top: 10px;
+}
+.introduccion h1{
+    font-size: 4rem;
+	text-align: center;
+	margin-top: 4%;
+	
+}
+.introduccion img{
+	max-width: 45%;
+	max-height: 80%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+	background: #21437c;
+}
+.nav{
+	
+	text-align: center;
+	display: inline;
+	width: 950px;
+	margin: 30px;
+	background: #24303c;
+	height: 48px;
+	border-radius: 10px;
+	margin-left: 17rem;
+	grid-area: Nav;
+	box-shadow: 7px 8px 37px #000;
+	margin: auto;
+	
+}
+.nav ul{
+	list-style: none;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 0,2fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	  "Header Header Header Header"
+	  "Nav Nav Nav Nav"
+	  "aside main main main"
+	  "footer footer footer footer";
+  }
+  
+  header { 
+	grid-area: Header; 
+	
+
+}
+
+.menu{
+	text-align: center;
+	margin-left: 30%;
+	margin: auto;
+ }
+  aside { 
+	grid-area: aside;
+
+}
+  
+  main { 
+	grid-area: main; 
+
+}
+  
+  footer { 
+	grid-area: footer; 
+
+}
+  
+  
+  .menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+	width: auto;
+	
+}
+
+.menu li a:hover{
+	color: #ff9b43;
+	transition: all .3s;
+}
+.submenu{
+	list-style: none;
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.form-registro {
+	width: 400px;
+	background: #24303c;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+	margin-left: 0.5rem;
+  }
+  
+  .form-registro h4 {
+	font-size: 22px;
+	margin-bottom: 20px;
+  }
+  
+  .form {
+	width: 100%;
+	background: #24303c;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: 'calibri';
+	font-size: 18px;
+	color: white;
+  }
+  
+  .form-registro p {
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+  }
+  
+  .form-registro a {
+	color: white;
+	text-decoration: none;
+  }
+  
+  .form-registro a:hover {
+	color: white;
+	text-decoration: underline;
+  }
+  
+  .form-registro .botones {
+	width: 100%;
+	background: #1f53c5;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+  }
+  .error{
+	  font-size: 30px;
+  }
+.container {
+	width: 45%;
+	margin-left: 500px;
+}
+
+.social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0;
+}
+
+.social-icons li {
+	list-style: none;
+}
+
+.social-icons li a {
+	display: block;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 3em;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	transition: .5s;
+	border: 2px solid #fff;
+	overflow: hidden;
+}
+
+.social-icons li a:hover {
+	transform: scale(1.7);
+}
+
+/* Hover */
+.social-icons li:nth-child(1) a:hover {
+	background: #fff;
+	color: #3b5999;
+}
+
+.social-icons li:nth-child(2) a:hover {
+	background: #fff;
+	color: #55acee;
+}
+
+.social-icons li:nth-child(3) a:hover {
+	background: #fff;
+	color: #e4405f;
+}
+
+.social-icons li:nth-child(4) a:hover {
+	background: #fff;
+	color: #dd4b39;
+}
+/* Responsive */
+@media (min-width : 0px) and (max-width : 800px) {
+    header {
+        text-align: left;
+		
+    }
+	.error{
+		font-size: 15px;
+	}
+	.icono {
+        margin-bottom: 0;
+    }
+	
+	.introduccion{
+		display: block;
+		padding: 100px;
+	}
+	.introduccion h1{
+		size: 2px;
+	}
+	.main{
+		display: flex;
+		max-width: 100%;
+	}
+	
+	  .form-registro {
+		margin-left: 0.5rem;
+		width: 400px;
+		background: #24303c;
+		padding: 30px;
+		margin: auto;
+		margin-top: 100px;
+		border-radius: 4px;
+		font-family: 'calibri';
+		color: white;
+		box-shadow: 7px 13px 37px #000;
+	  }
+}
+
+
+
+
+
+
